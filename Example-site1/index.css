@@ -1,0 +1,148 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+ul {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+nav ul {
+    background-color: grey;
+}
+
+ul li {
+    position: relative;
+    padding: 20px 0;
+    margin-left: 20px;
+
+}
+nav ul li {
+    color: white;
+}
+
+nav ul li:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: -5px;
+    background-size: cover;
+}
+
+nav li:nth-child(2):before {
+    background-image: url("../Site(gennis-mart)/Icons/home-solid.svg");
+
+
+}
+nav li:nth-child(3):before {
+    background-image: url("icons/envira-brands.svg");
+
+}
+nav li:nth-child(4):before {
+    background-image: url("icons/comments-solid.svg");
+
+}
+nav li:nth-child(5):before {
+    background-image: url("icons/book-solid.svg");
+
+}
+nav li:nth-child(6):before {
+    background-image: url("icons/search-location-solid.svg");
+
+}
+nav li:nth-child(7):before {
+    background-image: url("icons/question-solid.svg");
+
+}
+
+
+
+header {
+    z-index: 100;
+    width: 100%;
+    height: 78px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+img {
+    margin-top: 60px;
+}
+.articles img {
+    margin-top: 0;
+    height: 100px;
+    width: 150px;
+}
+.articles p {
+    margin-left: 25px;
+}
+.related-articles {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 700px;
+}
+.articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+
+
+}
+input {
+    width: 700px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 0;
+    transition-duration: 1s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.tag {
+    display: flex;
+    align-items: center;
+
+}
+input:hover {
+    background-color: #28c18d;
+}
+button {
+    transition-duration: 0.5s;
+    margin-left: 10px;
+    border-radius: 2px;
+    background-color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: black;
+    color: white;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a1c4e7;
+}
+.img {
+    background-color: #d06d85;
+}
+.description p{
+    padding: 20px;
+    width: 700px;
+}
+.tag {
+    width: 700px;
+}

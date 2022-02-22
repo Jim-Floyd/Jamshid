@@ -1,0 +1,66 @@
+body {
+            background-image: url("https://image.winudf.com/v2/image/Y29tLmRldi5jdWlhcHAubmF0dXJlX3NjcmVlbnNob3RzXzFfYTM0ZjAyMTI/screen-1.jpg?fakeurl=1&type=.jpg");
+            background-size: cover;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+            align-self: center;
+            margin-bottom: 10px;
+        }
+
+
+        .row1 {
+            display: flex;
+            justify-content: space-around;
+
+            flex-wrap: wrap;
+        }
+
+
+        .species:hover {
+            box-shadow: 2px 3px 10px 2px black;
+        }
+
+        .species {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(128, 128, 128, 0.23);
+            border-radius: 20px;
+            width: 400px;
+            backdrop-filter: blur(10px);
+            transition-duration: 1s;
+
+        }
+        .species:nth-child(4), .species:nth-child(5), .species:nth-child(6)  {
+            margin-top: 50px;
+        }
+        td, th {
+            border: 2px solid white;
+
+            backdrop-filter: blur(5px);
+            color: white;
+        }
+        table {
+            margin-top: 40px;
+            box-shadow: 0 0 3px 1px black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .example {
+            color: yellow;
+            background-color: #a1c4e7;
+        }

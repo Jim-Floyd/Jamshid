@@ -1,0 +1,24 @@
+.carousel {
+  width: 500px;
+  overflow: hidden;
+  margin-left: 450px;
+}
+.carousel .image-container {
+  display: flex;
+  align-items: center;
+  height: 530px;
+  transform: translateX(0);
+  transition: transform 0.5s cubic-bezier(0.06, 0.59, 0.56, 0.99);
+}
+.carousel .button-container button {
+  width: 248px;
+  background-color: dodgerblue;
+  color: #cccccc;
+  height: 30px;
+  border-radius: 5px;
+}
+.carousel .transform {
+  transform: translateX(0);
+}
+
+/*# sourceMappingURL=style.css.map */

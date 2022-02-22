@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-image: url("https://media.istockphoto.com/photos/digital-eye-wave-lines-stock-background-stock-video-picture-id1226241649?b=1&k=20&m=1226241649&s=170667a&w=0&h=lXhD5bdn_YT50-ItctUnqB2WiGZ8Jye1GZHjvDsb2Xo=");
+            background-size: cover;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 20px;
+
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            color: white;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: white;
+            color: blue;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+
+        .row1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .row2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .row3 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /*.iphone {*/
+        /*    display: flex;*/
+        /*    flex-direction: column;*/
+        /*    justify-content: center;*/
+        /*    border: 5px solid white;*/
+        /*    border-radius: 40px;*/
+        /*    height: 400px;*/
+        /*    width: 400px;*/
+        /*    align-items: center;*/
+        /*    align-self: center;*/
+        /*}*/
+
+        /*.iphone:hover {*/
+        /*    border: 5px solid greenyellow;*/
+        /*}*/
+
+        /*.iphone:hover.iphone h1 {*/
+        /*    color: blue;*/
+        /*}*/
+
+        /*.iphone:hover.iphone p {*/
+        /*    font-family: Impact, cursive;*/
+        /*}*/
+
+        /*.iphone:hover.iphone a {*/
+        /*    background-color: seagreen;*/
+        /*    color: black;*/
+        /*}*/
+
+        /*.huawei {*/
+        /*    display: flex;*/
+        /*    flex-direction: column;*/
+        /*    justify-content: center;*/
+        /*    border: 5px solid white;*/
+        /*    border-radius: 40px;*/
+        /*    height: 400px;*/
+        /*    width: 400px;*/
+        /*    align-items: center;*/
+        /*    align-self: center;*/
+        /*}*/
+
+        /*.huawei:hover {*/
+        /*    border: 5px solid greenyellow;*/
+        /*}*/
+
+        /*.huawei:hover.huawei h1 {*/
+        /*    color: blue;*/
+        /*}*/
+
+        /*.huawei:hover.huawei p {*/
+        /*    font-family: Impact, cursive;*/
+        /*}*/
+
+        /*.huawei:hover.huawei a {*/
+        /*    background-color: seagreen;*/
+        /*    color: black;*/
+        /*}*/
+
+        /*.vivo {*/
+        /*    display: flex;*/
+        /*    flex-direction: column;*/
+        /*    justify-content: center;*/
+        /*    border: 5px solid white;*/
+        /*    border-radius: 40px;*/
+        /*    height: 400px;*/
+        /*    width: 400px;*/
+        /*    align-items: center;*/
+        /*    align-self: center;*/
+        /*}*/
+
+        /*.vivo:hover {*/
+        /*    border: 5px solid greenyellow;*/
+        /*}*/
+
+        /*.vivo:hover.vivo h1 {*/
+        /*    color: blue;*/
+        /*}*/
+
+        /*.vivo:hover.vivo p {*/
+        /*    font-family: Impact, cursive;*/
+        /*}*/
+
+        /*.vivo:hover.vivo a {*/
+        /*    background-color: seagreen;*/
+        /*    color: black;*/
+        /*}*/
+
+        .element {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border: 5px solid white;
+            border-radius: 40px;
+            height: 400px;
+            width: 400px;
+            align-items: center;
+            transition-duration: 1s;
+        }
+
+        .element:hover {
+            border: 5px solid greenyellow;
+        }
+
+        .element:hover.element h1 {
+            color: blue;
+        }
+
+        .element:hover.element p {
+            font-family: Impact, cursive;
+        }
+
+        .element:hover.element a {
+            background-color: seagreen;
+            color: black;
+        }
+
+        .element:first-child h1{
+            color: green;
+        }
+
+        /*.redmi:hover {*/
+        /*    border: 5px solid greenyellow;*/
+        /*}*/
+
+        /*.redmi:hover.redmi h1 {*/
+        /*    color: blue;*/
+        /*}*/
+
+        /*.redmi:hover.redmi p {*/
+        /*    font-family: Impact, cursive;*/
+        /*}*/
+
+        /*.redmi:hover.redmi a {*/
+        /*    background-color: seagreen;*/
+        /*    color: black;*/
+        /*}*/
+
+        /*.redmi {*/
+        /*    display: flex;*/
+        /*    flex-direction: column;*/
+        /*    justify-content: space-around;*/
+        /*    border: 5px solid white;*/
+        /*    border-radius: 40px;*/
+        /*    height: 400px;*/
+        /*    width: 400px;*/
+        /*    align-items: center;*/
+        /*}*/
+        .element:hover{
+            box-shadow: 3px 13px 10px 6px red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="body">
+    <div class="row1">
+        <div class="element">
+            <h1>Samsung</h1>
+            <img src="https://assets.mspimages.in/wp-content/uploads/2021/03/Samsung-Galaxy-E02.jpg" alt="">
+            <p>Lorem ipsum</p>
+            <a href="https://www.bugatti.com/" target="_blank">Samsung Website</a>
+        </div>
+        <div class="element">
+            <h1>Redmi</h1>
+            <img src="https://assets.mspimages.in/wp-content/uploads/2021/09/Xiaomi-11-Lite-NE-5G.jpeg" alt="">
+            <p>Lorem ipsum dolor</p>
+            <a href="https://www.lamborghini.com/en-en" target="_blank">Redmi Website</a>
+        </div>
+    </div>
+        <div class="row2">
+            <div class="element">
+                <h1>iPhone</h1>
+                <img src="https://preview.free3d.com/img/2020/04/2398835745985922417/yutjz420-900.jpg" alt="">
+                <p>Lorem ipsum</p>
+                <a href="https://www.bugatti.com/" target="_blank">iPhone Website</a>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="element">
+                <h1>Huawei</h1>
+                <img src="https://cdn.mos.cms.futurecdn.net/3kVGrjKHGvocjScbp5iWs3-1200-80.jpg" alt="">
+                <p>Lorem ipsum</p>
+                <a href="https://www.bugatti.com/" target="_blank">Huawei Website</a>
+            </div>
+            <div class="element">
+                <h1>Vivo</h1>
+                <img src="https://www.gizmochina.com/wp-content/uploads/2020/12/vivo-Y51-Titanium-Sapphire-01.jpg" alt="">
+                <p>Lorem ipsum dolor</p>
+                <a href="https://www.lamborghini.com/en-en" target="_blank">Vivo Website</a>
+            </div>
+        </div>
+</div>
+</body>
+</html>

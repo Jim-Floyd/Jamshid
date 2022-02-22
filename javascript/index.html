@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function calcTip(bill) {
+    //     if (bill >= 50 && bill <= 300) {
+    //         tip = bill * 0.15
+    //     } else {
+    //         tip = bill * 0.2
+    //     }
+    //     return tip
+    // }
+    // const bills = [125, 555, 44]
+    // const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
+    // console.log(tips)
+    //
+    // const jonas = {
+    //     firstName : 'Jonas',
+    //     age: 46,
+    //     job: 'teacher',
+    //     hasDriversLicense: true
+    // }
+    // const article = jonas.hasDriversLicense ? 'a' : 'no'
+    // console.log(`${jonas.firstName} is a ${jonas.age}-year old ${jonas.job}, and he has ${article} driver's license`)
+
+    // const bills = [22, 295, 176, 440, 37, 105, 10, 110, 86, 52],
+    //     totals = [],
+    //     tips = []
+    // for (let i = 0; i < bills.length; i++) {
+    //     const calcTip = function () {
+    //         let tip = (bills[i] >= 50 && bills[i] <= 300) ? bills[i] * 0.15 : bills[i] * 0.2;
+    //         tips.push(tip);
+    //         let total = tips[i] + bills[i]
+    //         totals.push(total)
+    //     }
+    //     calcTip();
+    // }
+    //
+    // const calcAverage = function (arr) {
+    //     let sum = 0;
+    //     for (let i = 0; i < arr.length; i++) {
+    //         sum = sum + arr[i]
+    //     }
+    //     // let avr = sum/arr.length;
+    //     // console.log(sum)
+    //     // console.log(avr)
+    //     return sum/arr.length;
+    // }
+    // calcAverage(bills)
+    // calcAverage(tips)
+    // calcAverage(totals)
+    // console.log(bills)
+    // console.log(tips)
+    // console.log(totals)
+
+
+    const printForecast = function (arr) {
+        let text = '...'
+        for (let i = 1; i <= arr.length; i++) {
+            const a = `${arr[i - 1]} C in ${i} days...`
+
+            text = text + a
+
+        }
+        console.log(text)
+    }
+    printForecast([17, 21, 23])
+    printForecast([12, 5, -5, 0, 4])
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,473 @@
+header nav {
+  background: #3c4040;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+header nav .container .menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+header nav .container .menu_logo {
+  display: flex;
+  margin-right: 80px;
+  color: white;
+  align-items: center;
+}
+header nav .container .menu_logo_img {
+  width: 61px;
+  height: 48px;
+}
+header nav .container .menu_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+header nav .container .menu_main li {
+  text-decoration: none;
+  width: 200px;
+  position: relative;
+  list-style: none;
+  padding: 0 20px;
+}
+header nav .container .menu_main li:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  position: absolute;
+  margin-left: -45px;
+}
+header nav .container .menu_main li:first-child:before {
+  background-image: url("../icons/tshirt-solid.svg");
+}
+header nav .container .menu_main li:nth-child(2):before {
+  background-image: url("../icons/apple-alt-solid.svg");
+}
+header nav .container .menu_main li:nth-child(3):before {
+  background-image: url("../icons/wrench-solid.svg");
+}
+header nav .container .menu_main li:last-child:before {
+  background-image: url("../icons/sign-in-alt-solid.svg");
+}
+header nav .container .menu_main li a {
+  text-decoration: none;
+  color: white;
+}
+header nav .container .menu_search img {
+  width: 50px;
+  height: 50px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.introduction {
+  background-image: url("../img/background/shoppingmall4.jpg");
+  height: 800px;
+}
+.introduction .container .outer_box {
+  background-color: rgba(60, 64, 64, 0.47);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+  height: 600px;
+  align-items: center;
+  padding: 10px 50px;
+}
+.introduction .container .outer_box img {
+  width: 70px;
+  height: 70px;
+}
+.introduction .container .outer_box h1 {
+  color: white;
+  text-align: center;
+}
+.introduction .container .outer_box h5 {
+  color: white;
+}
+.introduction .container .outer_box p {
+  color: #28c18d;
+  text-align: center;
+}
+.introduction .container .outer_box button {
+  outline: none;
+  border: none;
+  padding: 8px;
+  width: 100px;
+  text-align: center;
+  background-image: radial-gradient(white 35%, black 88%);
+  border-right: 5px;
+}
+
+.belong header {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 50px 0;
+}
+.belong header:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  margin-left: -205px;
+  background-image: url("../icons/tshirt-solid.svg");
+}
+
+.belong_3_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  border-radius: 8px;
+}
+.belong_3_header:first-child {
+  background-image: linear-gradient(to top, #8cba45 70%, white 30%);
+}
+.belong_3_header:first-child .belong_3_header_title {
+  padding: 5px 15px;
+  background-color: #8cba45;
+  border-radius: 50%;
+}
+.belong_3_header p {
+  text-align: center;
+  padding: 0 10px;
+}
+.belong_3_header:nth-child(2) {
+  background-image: linear-gradient(to top, #9e24b4 70%, white 30%);
+}
+.belong_3_header:nth-child(2) .belong_3_header_title {
+  padding: 5px 15px;
+  background-color: #9e24b4;
+  border-radius: 50%;
+}
+.belong_3_header:last-child {
+  background-image: linear-gradient(to top, #21acce 70%, white 30%);
+}
+.belong_3_header:last-child .belong_3_header_title {
+  padding: 5px 15px;
+  background-color: #21acce;
+  border-radius: 50%;
+}
+
+.clothes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.belong_titles {
+  display: flex;
+  justify-content: space-around;
+}
+
+.belong_3 {
+  display: flex;
+  width: 350px;
+  flex-direction: column;
+  overflow-x: auto;
+}
+.belong_3_body {
+  display: flex;
+  align-items: center;
+}
+.belong_3_body_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+.belong_3_body_col_item {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.belong_3_body_col_item img {
+  width: 300px;
+  height: 250px;
+}
+.belong_3_body_col_item button {
+  outline: none;
+  border: none;
+  padding: 8px;
+  text-align: center;
+  background-color: #0d6efd;
+  border-radius: 10px;
+  color: white;
+}
+
+.products {
+  background-image: url("../img/background/product_background.jpg");
+  background-size: cover;
+}
+.products header {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 50px 0;
+}
+.products header:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 57px;
+  background-size: cover;
+  position: absolute;
+  margin-left: -240px;
+  background-image: url("../icons/apple-alt-solid.svg");
+}
+
+.body {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+.body_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 240px;
+  height: 280px;
+  background-color: rgba(255, 255, 255, 0.46);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.body_items img {
+  width: 200px;
+  height: 200px;
+}
+
+.techniques {
+  margin-bottom: 100px;
+}
+.techniques header {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 50px 0;
+}
+.techniques header:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  position: absolute;
+  margin-left: -240px;
+  background-image: url("../icons/wrench-solid.svg");
+}
+
+.body2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.body2_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 322px;
+  border: 2px solid black;
+  padding-bottom: 30px;
+  animation-name: moving1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+.body2_items:first-child {
+  animation-name: moving1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+.body2_items:nth-child(2) {
+  animation-name: moving1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+.body2_items:nth-child(3) {
+  animation-name: moving1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+.body2_items:nth-child(4) {
+  animation-name: moving1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+.body2_items:nth-child(5) {
+  animation-name: moving1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+.body2_items:nth-child(6) {
+  animation-name: moving1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+.body2_items:last-child {
+  animation-name: moving1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+.body2_items img {
+  width: 300px;
+  height: 300px;
+}
+.body2_items_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 20px;
+}
+.body2_items_button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2px 2px dodgerblue;
+}
+.body2_items_button img {
+  width: 25px;
+  height: 25px;
+}
+.body2_items_button p {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+.body2_items button {
+  outline: none;
+  border: none;
+  padding: 8px;
+  text-align: center;
+  background-color: #0d6efd;
+  border-radius: 10px;
+  color: white;
+}
+.body2_items .comments {
+  display: flex;
+  margin-bottom: 20px;
+}
+.body2_items .comments .stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.body2_items .comments .stars img {
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+}
+.body2_items .comments .comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body2_items .comments .comment img {
+  width: 20px;
+  height: 20px;
+}
+.body2_items .comments .comment p {
+  margin-bottom: 2px;
+}
+
+@keyframes moving1 {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 322px;
+  }
+  50% {
+    left: 644px;
+  }
+  75% {
+    left: 966px;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: #3c4040;
+  margin-top: 50px;
+  height: 300px;
+}
+footer h3 {
+  text-align: center;
+}
+
+.footer_body {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_body img {
+  position: absolute;
+  width: 300px;
+  height: 240px;
+  opacity: 0.2;
+  margin-left: -200px;
+}
+
+.footer1 {
+  width: 400px;
+}
+.footer1 p {
+  text-align: center;
+}
+.footer1 ul {
+  list-style: none;
+  text-align: center;
+}
+
+.footer3 {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+.footer3 img {
+  width: 50px;
+  height: 50px;
+  position: static;
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    background-color: white !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

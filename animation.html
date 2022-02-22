@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            animation-name: moving;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+            left: 0;
+        }
+
+        @keyframes anim {
+            from{
+                background-color: #0a58ca;
+            }
+            to{
+                background-color: yellow;
+            }
+        }
+        @keyframes moving {
+            0%{
+                left: 100px;
+            }
+            25%{
+                left: 200px;
+                background-color: #8cba45;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="box"></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+    background-image: url("https://www.germany-visa.org/wp-content/uploads/2019/11/working-freelancer-germany.jpeg");
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type=text], input[type=password] {
+    width: 300px;
+    margin-top: 10px;
+    background-color: #a1c4e7;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to left, black 40%, white 80%);
+    border-left: 3px solid black;
+    border-radius: 10px;
+    padding-left: 6px;
+    color: gold;
+}
+input::placeholder{
+    color: dodgerblue;
+}
+img {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    background-color: rgba(128, 128, 128, 0.31);
+
+}
+
+.showpassword {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    margin: 20px 0;
+}
+
+.showpassword input {
+    width: 20px;
+    height: 20px;
+
+}
+
+
+.login input[type=button]{
+    width: 120px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-image: linear-gradient(to left, rgba(73, 73, 239, 0.91) 40%, white 80%);
+    border-radius: 10px;
+}
+.login input[type=button]:active{
+    color: white;
+    transform: scale(0.8);
+}
+.login input[type=button]:focus{
+    background-image: linear-gradient(to left, rgba(73, 73, 239, 0.91) 40%, red 80%);
+}
+.loginby {
+    width: 160px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    align-items: center;
+}

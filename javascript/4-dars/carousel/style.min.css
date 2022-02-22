@@ -1,0 +1,1 @@
+.carousel{width:500px;overflow:hidden;margin-left:450px}.carousel .image-container{display:flex;align-items:center;height:530px;transform:translateX(0);transition:transform .5s cubic-bezier(.06,.59,.56,.99)}.carousel .button-container button{width:248px;background-color:#1e90ff;color:#ccc;height:30px;border-radius:5px}.carousel .transform{transform:translateX(0)}

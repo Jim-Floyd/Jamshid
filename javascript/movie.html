@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie</title>
+</head>
+<body>
+<script>
+    'use strict'
+    let objectInfo = {
+        name: '',
+        rating: '',
+        movies: {}
+    }
+
+    function movie(movieCount) {
+
+        for (let i = 0; i < movieCount; i++) {
+            let name = prompt('Kino nomini kiriting:'),
+                rating = +prompt("Kinoni baholang:");
+            if (name === '' || name === null && rating === 0) {
+                i--
+            } else {
+                objectInfo.movies[name] = rating;
+                objectInfo.name = name;
+                objectInfo.rating = rating;
+            }
+        }
+
+        function watchLevel() {
+            if (movieCount < 10) {
+                alert("Siz kam kino tomosha qilibsiz")
+            } else if (10 <= movieCount < 20) {
+                alert("Siz o'rtacha sondagi kino tomosha qilibsiz")
+            } else {
+                alert("Siz ko'p kino tomosha qilibsiz")
+            }
+        }
+
+        let bool = confirm("Natijani ko'rishni istaysizmi?")
+        if (bool === true) {
+            console.log(objectInfo)
+        }
+    }
+
+    movie(+prompt("Nechta kino ko'rdingiz"))
+
+
+</script>
+</body>
+</html>

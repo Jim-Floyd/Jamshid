@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <h1>Register into your website</h1>
+    <div class="body">
+      <div class="register">
+        <p>First name</p>
+        <input
+          class="first-name"
+          type="text"
+          placeholder="Enter your firstname"
+        />
+        <p>Last name</p>
+        <input
+          class="last-name"
+          type="text"
+          placeholder="Enter your lastname"
+        />
+
+        <p>Age</p>
+        <input type="date" />
+        <div class="checkbox">
+          <label for="married">Married?</label>
+          <input type="checkbox" id="married" />
+        </div>
+        <input type="number" placeholder="Enter your phone number" />
+        <p>Password</p>
+        <input
+          class="password"
+          type="password"
+          placeholder="Enter your password"
+        />
+        <div class="checkbox">
+          <input type="checkbox" id="password1" />
+          <label for="password1">Show password?</label>
+        </div>
+        <p class="pass-error">Password length must be at least 8 characters</p>
+        <p>Confirm password</p>
+        <input
+          class="repassword"
+          type="password"
+          placeholder="Confirm your password"
+        />
+        <div class="checkbox">
+          <input type="checkbox" id="password2" />
+          <label for="password">Show password?</label>
+        </div>
+        <p class="repass-error">Confirmation does not match</p>
+        <p>Location</p>
+        <select name="" id="">
+          <option value="">Xo'jakent</option>
+          <option value="">G'azalakent</option>
+        </select>
+        <p>Photo</p>
+        <input type="file" />
+        <input type="button" value="Register" />
+      </div>
+    </div>
+    <script src="register.js"></script>
+  </body>
+</html>

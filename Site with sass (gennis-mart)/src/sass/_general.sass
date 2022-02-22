@@ -1,0 +1,422 @@
+@import "mixins"
+@import "variables"
+header
+  nav
+    background: #3c4040
+    position: fixed
+    width: 100vw
+    z-index: 1
+    .container
+      .menu
+        width: 100%
+        display: flex
+        justify-content: space-between
+        padding: 10px 0
+        &_logo
+          display: flex
+          margin-right: 80px
+          color: white
+          align-items: center
+          &_img
+            width: 61px
+            height: 48px
+
+        &_main
+          display: flex
+          justify-content: space-between
+          align-items: center
+          margin-bottom: 0
+          li
+            text-decoration: none
+            width: 200px
+            position: relative
+            list-style: none
+            padding: 0 20px
+            &:before
+              content: ''
+              display: block
+              width: 30px
+              height: 30px
+              background-size: cover
+              position: absolute
+              margin-left: -45px
+            &:first-child
+              &:before
+                background-image: url('../icons/tshirt-solid.svg')
+            &:nth-child(2)
+              &:before
+                background-image: url('../icons/apple-alt-solid.svg')
+            &:nth-child(3)
+              &:before
+                background-image: url('../icons/wrench-solid.svg')
+            &:last-child
+              &:before
+                background-image: url('../icons/sign-in-alt-solid.svg')
+            a
+              text-decoration: none
+              color: white
+        &_search
+          img
+            width: 50px
+            height: 50px
+
+section
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin-bottom: 100px
+
+.introduction
+  background-image: url("../img/background/shoppingmall4.jpg")
+  height: 800px
+
+  .container
+    .outer_box
+      background-color: rgba(60, 64, 64, 0.47)
+      backdrop-filter: blur(5px)
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-self: center
+      height: 600px
+      align-items: center
+      padding: 10px 50px
+      img
+        width: 70px
+        height: 70px
+      h1
+        color: white
+        text-align: center
+      h5
+        color: white
+      p
+        color: #28c18d
+        text-align: center
+      button
+        @include buttons
+
+.belong
+  header
+    display: flex
+    justify-content: center
+    align-self: center
+    padding: 50px 0
+    &:before
+      content: ''
+      display: block
+      width: 50px
+      height: 40px
+      background-size: cover
+      position: absolute
+      margin-left: -205px
+
+      background-image: url("../icons/tshirt-solid.svg")
+
+.belong_3_header
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 400px
+  border-radius: 8px
+  &:first-child
+    background-image: linear-gradient(to top,#8cba45 70%, white 30%)
+    .belong_3_header_title
+      padding: 5px 15px
+      background-color: #8cba45
+      border-radius: 50%
+  p
+    text-align: center
+    padding: 0 10px
+  &:nth-child(2)
+    background-image: linear-gradient(to top, #9e24b4 70%, white 30%)
+    .belong_3_header_title
+      padding: 5px 15px
+      background-color: #9e24b4
+      border-radius: 50%
+  &:last-child
+    background-image: linear-gradient(to top, #21acce 70%, white 30%)
+    .belong_3_header_title
+      padding: 5px 15px
+      background-color: #21acce
+      border-radius: 50%
+.clothes
+  display: flex
+  justify-content: space-around
+.belong_titles
+  display: flex
+  justify-content: space-around
+.belong_3
+  display: flex
+  width: 350px
+  flex-direction: column
+  overflow-x: auto
+  &_body
+    display: flex
+    align-items: center
+    &_col
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      width: 400px
+      &_item
+        width: 350px
+        height: 350px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 30px
+        border-left: 1px solid black
+        border-bottom: 1px solid black
+        img
+          width: 300px
+          height: 250px
+        button
+          @include btn2
+
+.products
+  background-image: url("../img/background/product_background.jpg")
+  background-size: cover
+
+  header
+    display: flex
+    justify-content: center
+    align-self: center
+    padding: 50px 0
+    &:before
+      content: ''
+      display: block
+      width: 50px
+      height: 57px
+      background-size: cover
+      position: absolute
+      margin-left: -240px
+
+      background-image: url("../icons/apple-alt-solid.svg")
+
+
+.body
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  padding-bottom: 100px
+
+  &_items
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    width: 240px
+    height: 280px
+    background-color: rgba(255, 255, 255, 0.46)
+    backdrop-filter: blur(5px)
+    border-radius: 10px
+    margin-top: 50px
+    img
+      width: 200px
+      height: 200px
+
+.techniques
+  margin-bottom: 100px
+  header
+    display: flex
+    justify-content: center
+    align-self: center
+    padding: 50px 0
+    &:before
+      content: ''
+      display: block
+      width: 50px
+      height: 50px
+      background-size: cover
+      position: absolute
+      margin-left: -240px
+
+      background-image: url("../icons/wrench-solid.svg")
+
+.body2
+  display: flex
+  justify-content: center
+  align-items: center
+  overflow: hidden
+
+  &_items
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 322px
+    border: 2px solid black
+    padding-bottom: 30px
+    animation-name: moving1
+    animation-duration: 5s
+    animation-iteration-count: infinite
+    position: relative
+    &:first-child
+      animation-name: moving1
+      animation-duration: 5s
+      animation-iteration-count: infinite
+      position: relative
+    &:nth-child(2)
+      animation-name: moving1
+      animation-duration: 5s
+      animation-iteration-count: infinite
+      position: relative
+    &:nth-child(3)
+      animation-name: moving1
+      animation-duration: 5s
+      animation-iteration-count: infinite
+      position: relative
+    &:nth-child(4)
+      animation-name: moving1
+      animation-duration: 5s
+      animation-iteration-count: infinite
+      position: relative
+    &:nth-child(5)
+      animation-name: moving1
+      animation-duration: 5s
+      animation-iteration-count: infinite
+      position: relative
+    &:nth-child(6)
+      animation-name: moving1
+      animation-duration: 5s
+      animation-iteration-count: infinite
+      position: relative
+    &:last-child
+      animation-name: moving1
+      animation-duration: 5s
+      animation-iteration-count: infinite
+      position: relative
+
+        
+
+    img
+      width: 300px
+      height: 300px
+    &_button
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 10px
+      background-color: dodgerblue
+      color: white
+      border-radius: 20px
+      &:hover
+        cursor: pointer
+        box-shadow: 0 0 2px 2px dodgerblue
+      img
+        width: 25px
+        height: 25px
+      p
+        margin-bottom: 0
+        margin-left: 5px
+    button
+      @include btn2
+    .comments
+      display: flex
+      margin-bottom: 20px
+      .stars
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 20px
+        img
+          width: 15px
+          height: 15px
+          margin-right: 3px
+      .comment
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+          width: 20px
+          height: 20px
+        p
+          margin-bottom: 2px
+@keyframes moving1
+            0%
+              left: 0
+            25%
+              left: 322px
+            50%
+              left: 644px
+            75%
+              left: 966px
+//@keyframes moving2
+//            0%
+//              left: 0
+//            25%
+//              left: 322px
+//            50%
+//              left: 644px
+//            75%
+//              left: 966px
+//@keyframes moving3
+//            0%
+//              left: 644px
+//            25%
+//              left: 966px
+//            75%
+//              left: 1288px
+//            100%
+//              left: 322px
+//@keyframes moving4
+//            0%
+//              left: 966px
+//            25%
+//              left: 1288px
+//            75%
+//              left: 322px
+//            100%
+//              left: 644px
+
+
+
+
+footer
+  display: flex
+  justify-content: space-between
+  color: white
+  background-color: #3c4040
+  margin-top: 50px
+  height: 300px
+  h3
+    text-align: center
+
+.footer_body
+  display: flex
+  justify-content: space-between
+  img
+    position: absolute
+    width: 300px
+    height: 240px
+    opacity: 0.2
+    margin-left: -200px
+
+
+.footer1
+  width: 400px
+  p
+    text-align: center
+  ul
+    list-style: none
+    text-align: center
+
+
+.footer3
+  display: flex
+  justify-content: space-around
+  width: 300px
+  img
+    width: 50px
+    height: 50px
+    position: static
+    opacity: 1
+
+
+
+
+
+
